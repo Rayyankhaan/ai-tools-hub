@@ -1,0 +1,11 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/free-tools": "pages/free-tools.js",
+  "/": "pages/index.js",
+  "/prompt-maker": "pages/prompt-maker.js",
+  "/ai-tools": "pages/ai-tools.js",
+  "/login": "pages/login.js",
+  "/admin": "pages/admin.js"
+}

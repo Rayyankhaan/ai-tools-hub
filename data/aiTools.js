@@ -1,0 +1,190 @@
+export const aiTools = [
+  // Chatbots & Language Models
+  { id: 1, name: "ChatGPT", category: "Chatbot", description: "OpenAI's powerful conversational AI for writing, coding, analysis, and creative tasks.", url: "https://chat.openai.com", logo: "💬", color: "#10a37f", featured: true, rating: 4.9, users: "100M+", free: true, tags: ["chatbot", "writing", "coding"] },
+  { id: 2, name: "Claude", category: "Chatbot", description: "Anthropic's AI assistant known for nuanced reasoning, safety, and long-context understanding.", url: "https://claude.ai", logo: "🧠", color: "#cc785c", featured: true, rating: 4.8, users: "10M+", free: true, tags: ["chatbot", "reasoning", "writing"] },
+  { id: 3, name: "Gemini", category: "Chatbot", description: "Google's multimodal AI model capable of understanding text, images, audio, and video.", url: "https://gemini.google.com", logo: "✨", color: "#4285f4", featured: true, rating: 4.7, users: "50M+", free: true, tags: ["chatbot", "multimodal", "google"] },
+  { id: 4, name: "Perplexity AI", category: "Search AI", description: "AI-powered search engine that provides real-time answers with cited sources.", url: "https://perplexity.ai", logo: "🔍", color: "#20b2aa", featured: true, rating: 4.7, users: "15M+", free: true, tags: ["search", "research", "citations"] },
+  { id: 5, name: "Copilot", category: "Chatbot", description: "Microsoft's AI companion powered by GPT-4, integrated across Microsoft products.", url: "https://copilot.microsoft.com", logo: "🪟", color: "#0078d4", featured: false, rating: 4.5, users: "40M+", free: true, tags: ["chatbot", "microsoft", "productivity"] },
+  { id: 6, name: "Meta AI", category: "Chatbot", description: "Meta's AI assistant available across WhatsApp, Instagram, and Facebook.", url: "https://meta.ai", logo: "🌀", color: "#0866ff", featured: false, rating: 4.4, users: "20M+", free: true, tags: ["chatbot", "social", "meta"] },
+  { id: 7, name: "Grok", category: "Chatbot", description: "xAI's AI chatbot with real-time X (Twitter) data access and a rebellious personality.", url: "https://grok.x.ai", logo: "⚡", color: "#1da1f2", featured: false, rating: 4.3, users: "5M+", free: false, tags: ["chatbot", "realtime", "x"] },
+  { id: 8, name: "Pi", category: "Chatbot", description: "Inflection AI's personal AI designed for empathetic, supportive conversations.", url: "https://heypi.com", logo: "🥧", color: "#7c3aed", featured: false, rating: 4.2, users: "2M+", free: true, tags: ["chatbot", "personal", "empathy"] },
+  { id: 9, name: "Character.AI", category: "Chatbot", description: "Create and chat with AI characters modeled after real or fictional personas.", url: "https://character.ai", logo: "🎭", color: "#9333ea", featured: false, rating: 4.4, users: "20M+", free: true, tags: ["chatbot", "roleplay", "characters"] },
+  { id: 10, name: "Poe", category: "Chatbot", description: "Quora's platform aggregating multiple AI models including Claude, GPT-4, and more.", url: "https://poe.com", logo: "📝", color: "#ff6154", featured: false, rating: 4.3, users: "8M+", free: true, tags: ["chatbot", "multi-model", "quora"] },
+
+  // Image Generation
+  { id: 11, name: "Midjourney", category: "Image Generation", description: "Industry-leading AI art generator producing stunning photorealistic and artistic images.", url: "https://midjourney.com", logo: "🎨", color: "#2d3748", featured: true, rating: 4.9, users: "16M+", free: false, tags: ["image", "art", "creative"] },
+  { id: 12, name: "DALL-E 3", category: "Image Generation", description: "OpenAI's advanced image generator integrated directly into ChatGPT.", url: "https://openai.com/dall-e-3", logo: "🖼️", color: "#ff6b6b", featured: true, rating: 4.7, users: "10M+", free: false, tags: ["image", "openai", "creative"] },
+  { id: 13, name: "Stable Diffusion", category: "Image Generation", description: "Open-source AI image model that runs locally or in the cloud with full customization.", url: "https://stability.ai", logo: "🌊", color: "#8b5cf6", featured: true, rating: 4.6, users: "30M+", free: true, tags: ["image", "open-source", "customizable"] },
+  { id: 14, name: "Adobe Firefly", category: "Image Generation", description: "Adobe's AI image generator trained on licensed content, safe for commercial use.", url: "https://firefly.adobe.com", logo: "🦋", color: "#ff0000", featured: false, rating: 4.5, users: "12M+", free: true, tags: ["image", "adobe", "commercial"] },
+  { id: 15, name: "Leonardo AI", category: "Image Generation", description: "AI platform for generating game assets, concept art, and creative visuals.", url: "https://leonardo.ai", logo: "🦁", color: "#f59e0b", featured: false, rating: 4.6, users: "5M+", free: true, tags: ["image", "game", "concept-art"] },
+  { id: 16, name: "Ideogram", category: "Image Generation", description: "AI image generator specializing in text-within-images and typography art.", url: "https://ideogram.ai", logo: "💡", color: "#06b6d4", featured: false, rating: 4.5, users: "2M+", free: true, tags: ["image", "typography", "text"] },
+  { id: 17, name: "Playground AI", category: "Image Generation", description: "Free AI image generator with a user-friendly interface and multiple model options.", url: "https://playground.com", logo: "🛝", color: "#22c55e", featured: false, rating: 4.3, users: "3M+", free: true, tags: ["image", "free", "playground"] },
+  { id: 18, name: "Canva AI", category: "Image Generation", description: "Design platform with integrated AI image generation and editing tools.", url: "https://canva.com", logo: "🎯", color: "#00c4cc", featured: false, rating: 4.5, users: "150M+", free: true, tags: ["image", "design", "canva"] },
+  { id: 19, name: "Bing Image Creator", category: "Image Generation", description: "Microsoft's free AI image generator powered by DALL-E 3 technology.", url: "https://bing.com/images/create", logo: "🖌️", color: "#0078d4", featured: false, rating: 4.3, users: "20M+", free: true, tags: ["image", "microsoft", "free"] },
+  { id: 20, name: "Flux AI", category: "Image Generation", description: "Black Forest Labs' cutting-edge image generation model with superior quality.", url: "https://blackforestlabs.ai", logo: "⚫", color: "#1a1a2e", featured: false, rating: 4.7, users: "1M+", free: false, tags: ["image", "quality", "advanced"] },
+
+  // Video Generation
+  { id: 21, name: "Runway AI", category: "Video Generation", description: "Professional AI video creation and editing platform used by filmmakers worldwide.", url: "https://runwayml.com", logo: "🎬", color: "#ff4b4b", featured: true, rating: 4.7, users: "3M+", free: true, tags: ["video", "editing", "generation"] },
+  { id: 22, name: "Sora", category: "Video Generation", description: "OpenAI's groundbreaking text-to-video model generating hyper-realistic videos.", url: "https://sora.com", logo: "🌅", color: "#0ea5e9", featured: true, rating: 4.8, users: "2M+", free: false, tags: ["video", "openai", "text-to-video"] },
+  { id: 23, name: "Kling AI", category: "Video Generation", description: "Kuaishou's AI video generator creating cinematic quality videos from text.", url: "https://klingai.com", logo: "🎥", color: "#6366f1", featured: false, rating: 4.5, users: "2M+", free: true, tags: ["video", "cinematic", "text-to-video"] },
+  { id: 24, name: "Hailuo AI", category: "Video Generation", description: "MiniMax's video generation AI creating smooth, high-quality short videos.", url: "https://hailuoai.com", logo: "🌊", color: "#0284c7", featured: false, rating: 4.4, users: "1M+", free: true, tags: ["video", "minimax", "short-form"] },
+  { id: 25, name: "Luma Dream Machine", category: "Video Generation", description: "AI model generating highly realistic videos with consistent physics and motion.", url: "https://lumalabs.ai", logo: "🌙", color: "#7c3aed", featured: false, rating: 4.5, users: "1M+", free: true, tags: ["video", "realistic", "luma"] },
+  { id: 26, name: "Pika Labs", category: "Video Generation", description: "Text and image-to-video AI platform for creating cinematic video clips.", url: "https://pika.art", logo: "⚡", color: "#f59e0b", featured: false, rating: 4.4, users: "500K+", free: true, tags: ["video", "creative", "pika"] },
+  { id: 27, name: "Synthesia", category: "Video Generation", description: "Create professional AI avatar videos with just text — no cameras needed.", url: "https://synthesia.io", logo: "🤖", color: "#6d28d9", featured: false, rating: 4.5, users: "1M+", free: false, tags: ["video", "avatar", "presentations"] },
+  { id: 28, name: "HeyGen", category: "Video Generation", description: "AI video platform for creating personalized videos with realistic AI avatars.", url: "https://heygen.com", logo: "👤", color: "#059669", featured: false, rating: 4.6, users: "500K+", free: true, tags: ["video", "avatar", "personalization"] },
+
+  // Writing & Content
+  { id: 29, name: "Jasper AI", category: "Writing", description: "AI writing assistant for marketing copy, blog posts, and brand content at scale.", url: "https://jasper.ai", logo: "✍️", color: "#f97316", featured: true, rating: 4.5, users: "3M+", free: false, tags: ["writing", "marketing", "content"] },
+  { id: 30, name: "Copy.ai", category: "Writing", description: "AI-powered copywriting tool for ads, emails, product descriptions and more.", url: "https://copy.ai", logo: "📋", color: "#06b6d4", featured: false, rating: 4.4, users: "10M+", free: true, tags: ["writing", "copywriting", "ads"] },
+  { id: 31, name: "Writesonic", category: "Writing", description: "AI writer for creating SEO-optimized articles, ads, and website content fast.", url: "https://writesonic.com", logo: "🔊", color: "#8b5cf6", featured: false, rating: 4.4, users: "5M+", free: true, tags: ["writing", "seo", "articles"] },
+  { id: 32, name: "Grammarly", category: "Writing", description: "AI-powered grammar, spelling, and style checker that improves your writing quality.", url: "https://grammarly.com", logo: "✅", color: "#15c39a", featured: true, rating: 4.7, users: "30M+", free: true, tags: ["writing", "grammar", "proofreading"] },
+  { id: 33, name: "Notion AI", category: "Writing", description: "AI integrated into Notion for summarizing, drafting, and organizing documents.", url: "https://notion.so", logo: "📓", color: "#000000", featured: true, rating: 4.6, users: "20M+", free: true, tags: ["writing", "productivity", "notes"] },
+  { id: 34, name: "QuillBot", category: "Writing", description: "AI paraphrasing tool that rewrites sentences, paragraphs and articles.", url: "https://quillbot.com", logo: "🪶", color: "#1ea672", featured: false, rating: 4.5, users: "15M+", free: true, tags: ["writing", "paraphrasing", "rewriting"] },
+  { id: 35, name: "Wordtune", category: "Writing", description: "AI writing companion that rewrites and improves your sentences instantly.", url: "https://wordtune.com", logo: "🎵", color: "#7c3aed", featured: false, rating: 4.3, users: "5M+", free: true, tags: ["writing", "rewriting", "tone"] },
+
+  // Coding
+  { id: 36, name: "GitHub Copilot", category: "Coding", description: "AI pair programmer by GitHub and OpenAI that suggests code in real-time as you type.", url: "https://github.com/features/copilot", logo: "👾", color: "#24292f", featured: true, rating: 4.8, users: "10M+", free: false, tags: ["coding", "github", "autocomplete"] },
+  { id: 37, name: "Cursor", category: "Coding", description: "AI-first code editor that understands your codebase and generates code from chat.", url: "https://cursor.sh", logo: "🖱️", color: "#000000", featured: true, rating: 4.8, users: "1M+", free: true, tags: ["coding", "editor", "ai-first"] },
+  { id: 38, name: "Replit AI", category: "Coding", description: "Browser-based coding environment with AI assistance for building and deploying apps.", url: "https://replit.com", logo: "💻", color: "#f26207", featured: false, rating: 4.5, users: "20M+", free: true, tags: ["coding", "browser", "deployment"] },
+  { id: 39, name: "Tabnine", category: "Coding", description: "AI code completion tool that learns your coding style and team patterns.", url: "https://tabnine.com", logo: "📑", color: "#22c55e", featured: false, rating: 4.4, users: "1M+", free: true, tags: ["coding", "autocomplete", "teams"] },
+  { id: 40, name: "Codeium", category: "Coding", description: "Free AI coding toolkit with autocomplete, chat, and search in 70+ languages.", url: "https://codeium.com", logo: "🟢", color: "#09b64e", featured: false, rating: 4.6, users: "500K+", free: true, tags: ["coding", "free", "multi-language"] },
+  { id: 41, name: "Bolt.new", category: "Coding", description: "AI web app builder by StackBlitz — describe your app and it builds it instantly.", url: "https://bolt.new", logo: "⚡", color: "#f59e0b", featured: true, rating: 4.7, users: "2M+", free: true, tags: ["coding", "web-apps", "fullstack"] },
+  { id: 42, name: "v0 by Vercel", category: "Coding", description: "Generate UI components from text prompts with Next.js and Tailwind CSS.", url: "https://v0.dev", logo: "▲", color: "#000000", featured: false, rating: 4.6, users: "1M+", free: true, tags: ["coding", "ui", "vercel"] },
+  { id: 43, name: "Claude Code", category: "Coding", description: "Anthropic's agentic coding tool that writes, edits, and runs code in your terminal.", url: "https://claude.ai/code", logo: "🧬", color: "#cc785c", featured: false, rating: 4.7, users: "500K+", free: false, tags: ["coding", "agentic", "terminal"] },
+
+  // Audio & Music
+  { id: 44, name: "ElevenLabs", category: "Audio", description: "Ultra-realistic AI voice generation and cloning platform for creators and developers.", url: "https://elevenlabs.io", logo: "🎙️", color: "#f59e0b", featured: true, rating: 4.9, users: "5M+", free: true, tags: ["audio", "voice", "tts"] },
+  { id: 45, name: "Suno AI", category: "Audio", description: "Create full songs with vocals, lyrics, and music in any genre from text prompts.", url: "https://suno.ai", logo: "🎵", color: "#ec4899", featured: true, rating: 4.8, users: "10M+", free: true, tags: ["audio", "music", "songs"] },
+  { id: 46, name: "Udio", category: "Audio", description: "AI music generator creating professional-sounding tracks in any style.", url: "https://udio.com", logo: "🎼", color: "#8b5cf6", featured: false, rating: 4.6, users: "2M+", free: true, tags: ["audio", "music", "generation"] },
+  { id: 47, name: "Mubert", category: "Audio", description: "Generate royalty-free AI music for videos, podcasts, and apps in seconds.", url: "https://mubert.com", logo: "🎸", color: "#06b6d4", featured: false, rating: 4.3, users: "1M+", free: true, tags: ["audio", "royalty-free", "background"] },
+  { id: 48, name: "Descript", category: "Audio", description: "Audio and video editing tool with AI transcription, voice cloning, and editing.", url: "https://descript.com", logo: "🎞️", color: "#2563eb", featured: false, rating: 4.5, users: "1M+", free: true, tags: ["audio", "video", "transcription"] },
+
+  // Productivity & Business
+  { id: 49, name: "Zapier AI", category: "Productivity", description: "Automate workflows and connect 6000+ apps with AI-powered automation.", url: "https://zapier.com", logo: "⚡", color: "#ff4a00", featured: false, rating: 4.5, users: "2M+", free: true, tags: ["productivity", "automation", "workflows"] },
+  { id: 50, name: "Make.com", category: "Productivity", description: "Visual automation platform with AI features for building complex workflows.", url: "https://make.com", logo: "🔗", color: "#6d28d9", featured: false, rating: 4.5, users: "500K+", free: true, tags: ["productivity", "automation", "no-code"] },
+  { id: 51, name: "Otter.ai", category: "Productivity", description: "AI meeting assistant that records, transcribes and summarizes your meetings.", url: "https://otter.ai", logo: "🦦", color: "#0ea5e9", featured: false, rating: 4.5, users: "1M+", free: true, tags: ["productivity", "meetings", "transcription"] },
+  { id: 52, name: "Beautiful.ai", category: "Productivity", description: "AI-powered presentation maker that auto-designs slides as you add content.", url: "https://beautiful.ai", logo: "💎", color: "#ec4899", featured: false, rating: 4.4, users: "1M+", free: false, tags: ["productivity", "presentations", "design"] },
+  { id: 53, name: "Tome", category: "Productivity", description: "AI-native presentation and document builder for modern storytelling.", url: "https://tome.app", logo: "📖", color: "#7c3aed", featured: false, rating: 4.3, users: "2M+", free: true, tags: ["productivity", "presentations", "documents"] },
+
+  // Research & Education
+  { id: 54, name: "Consensus", category: "Research", description: "AI search engine that extracts scientific findings from research papers.", url: "https://consensus.app", logo: "📊", color: "#2563eb", featured: false, rating: 4.5, users: "500K+", free: true, tags: ["research", "science", "papers"] },
+  { id: 55, name: "Elicit", category: "Research", description: "AI research assistant that helps find and analyze scientific literature.", url: "https://elicit.org", logo: "🔬", color: "#059669", featured: false, rating: 4.4, users: "200K+", free: true, tags: ["research", "science", "literature"] },
+  { id: 56, name: "Khanmigo", category: "Education", description: "Khan Academy's AI tutor guiding students through problems without giving answers.", url: "https://khanacademy.org/khan-labs", logo: "🎓", color: "#14b8a6", featured: false, rating: 4.6, users: "1M+", free: false, tags: ["education", "tutoring", "math"] },
+  { id: 57, name: "Socratic by Google", category: "Education", description: "Google's AI study app helping students understand subjects through visual explanations.", url: "https://socratic.org", logo: "🦉", color: "#4285f4", featured: false, rating: 4.4, users: "5M+", free: true, tags: ["education", "students", "homework"] },
+
+  // SEO & Marketing
+  { id: 58, name: "Surfer SEO", category: "SEO", description: "AI-powered SEO tool for optimizing content and improving search rankings.", url: "https://surferseo.com", logo: "🏄", color: "#f59e0b", featured: false, rating: 4.5, users: "100K+", free: false, tags: ["seo", "content", "optimization"] },
+  { id: 59, name: "Semrush AI", category: "SEO", description: "All-in-one SEO platform with AI writing assistant and market research tools.", url: "https://semrush.com", logo: "📈", color: "#ff642d", featured: false, rating: 4.6, users: "500K+", free: true, tags: ["seo", "marketing", "analytics"] },
+  { id: 60, name: "HubSpot AI", category: "Marketing", description: "CRM platform with AI features for marketing, sales, and customer service.", url: "https://hubspot.com", logo: "🔶", color: "#ff7a59", featured: false, rating: 4.5, users: "1M+", free: true, tags: ["marketing", "crm", "sales"] },
+
+  // Design
+  { id: 61, name: "Figma AI", category: "Design", description: "Design platform with AI features for generating UI, writing copy, and prototyping.", url: "https://figma.com", logo: "🎪", color: "#f24e1e", featured: false, rating: 4.7, users: "5M+", free: true, tags: ["design", "ui", "prototyping"] },
+  { id: 62, name: "Framer AI", category: "Design", description: "AI website builder that generates full websites from text descriptions.", url: "https://framer.com", logo: "🖇️", color: "#0099ff", featured: false, rating: 4.5, users: "500K+", free: true, tags: ["design", "website", "ai-builder"] },
+  { id: 63, name: "Looka", category: "Design", description: "AI logo maker creating professional brand identities and design kits.", url: "https://looka.com", logo: "👀", color: "#5a67d8", featured: false, rating: 4.3, users: "3M+", free: false, tags: ["design", "logo", "branding"] },
+  { id: 64, name: "Remove.bg", category: "Design", description: "AI-powered background remover that works instantly on any photo.", url: "https://remove.bg", logo: "✂️", color: "#ff4081", featured: false, rating: 4.6, users: "20M+", free: true, tags: ["design", "background-removal", "editing"] },
+
+  // AI Assistants & Agents
+  { id: 65, name: "AutoGPT", category: "AI Agent", description: "Autonomous AI agent that chains GPT-4 calls to complete complex multi-step tasks.", url: "https://agpt.co", logo: "🤖", color: "#22c55e", featured: false, rating: 4.2, users: "500K+", free: true, tags: ["agent", "autonomous", "automation"] },
+  { id: 66, name: "LangChain", category: "AI Agent", description: "Framework for building LLM-powered applications and AI agents with tools.", url: "https://langchain.com", logo: "⛓️", color: "#1c7c54", featured: false, rating: 4.4, users: "500K+", free: true, tags: ["agent", "framework", "developer"] },
+  { id: 67, name: "Cohere", category: "AI Platform", description: "Enterprise AI platform with language models for search, summarization, and generation.", url: "https://cohere.com", logo: "🌐", color: "#39594d", featured: false, rating: 4.4, users: "200K+", free: true, tags: ["enterprise", "nlp", "api"] },
+  { id: 68, name: "Anthropic API", category: "AI Platform", description: "Access Claude models via API for building powerful AI applications.", url: "https://anthropic.com", logo: "🔮", color: "#cc785c", featured: false, rating: 4.8, users: "100K+", free: true, tags: ["api", "developer", "enterprise"] },
+  { id: 69, name: "OpenAI API", category: "AI Platform", description: "Access GPT-4, DALL-E, Whisper and more via OpenAI's developer API.", url: "https://openai.com/api", logo: "⚙️", color: "#10a37f", featured: false, rating: 4.8, users: "1M+", free: false, tags: ["api", "developer", "gpt4"] },
+  { id: 70, name: "Together AI", category: "AI Platform", description: "Run and fine-tune open-source AI models in the cloud at low cost.", url: "https://together.ai", logo: "🤝", color: "#6366f1", featured: false, rating: 4.4, users: "200K+", free: true, tags: ["api", "open-source", "fine-tuning"] },
+
+  // Specialized AI
+  { id: 71, name: "Whisper", category: "Audio", description: "OpenAI's open-source speech recognition model with multi-language support.", url: "https://openai.com/research/whisper", logo: "👂", color: "#10a37f", featured: false, rating: 4.7, users: "500K+", free: true, tags: ["audio", "speech-to-text", "open-source"] },
+  { id: 72, name: "DeepL", category: "Translation", description: "AI translation tool known for nuanced, accurate translations in 30+ languages.", url: "https://deepl.com", logo: "🌍", color: "#0f2b46", featured: false, rating: 4.7, users: "30M+", free: true, tags: ["translation", "language", "writing"] },
+  { id: 73, name: "Lovo.ai", category: "Audio", description: "AI voice generator and text-to-speech platform with 500+ voices.", url: "https://lovo.ai", logo: "📢", color: "#6366f1", featured: false, rating: 4.4, users: "200K+", free: true, tags: ["audio", "voice", "tts"] },
+  { id: 74, name: "Synthesia", category: "Video Generation", description: "AI video generation platform with 230+ AI avatars and 140+ languages.", url: "https://synthesia.io", logo: "🎦", color: "#6d28d9", featured: false, rating: 4.5, users: "1M+", free: false, tags: ["video", "avatar", "enterprise"] },
+  { id: 75, name: "Topaz Labs", category: "Image Editing", description: "AI image enhancement tools for upscaling, sharpening, and noise reduction.", url: "https://topazlabs.com", logo: "💎", color: "#0891b2", featured: false, rating: 4.6, users: "2M+", free: false, tags: ["image", "enhancement", "upscaling"] },
+];
+
+export const categories = [
+  "All",
+  "Chatbot",
+  "Image Generation",
+  "Video Generation",
+  "Writing",
+  "Coding",
+  "Audio",
+  "Productivity",
+  "Research",
+  "Education",
+  "SEO",
+  "Marketing",
+  "Design",
+  "AI Agent",
+  "AI Platform",
+  "Translation",
+  "Image Editing",
+  "Search AI",
+];
+
+export const blogPosts = [
+  {
+    id: 1,
+    title: "Top 20 AI Tools You Must Try in 2026",
+    excerpt: "From ChatGPT to Claude, Midjourney to Sora — discover the most powerful AI tools reshaping how we work, create, and communicate in 2026.",
+    category: "Roundup",
+    readTime: "8 min read",
+    date: "March 8, 2026",
+    emoji: "🚀",
+    color: "#4f46e5",
+    tags: ["AI Tools", "2026", "Productivity"],
+  },
+  {
+    id: 2,
+    title: "Best AI Tools for Students in 2026",
+    excerpt: "Level up your studies with AI. We cover the best AI assistants, research tools, essay writers, and learning platforms built for students.",
+    category: "Education",
+    readTime: "6 min read",
+    date: "March 5, 2026",
+    emoji: "🎓",
+    color: "#059669",
+    tags: ["Students", "Education", "Productivity"],
+  },
+  {
+    id: 3,
+    title: "How AI is Completely Changing Programming",
+    excerpt: "Cursor, GitHub Copilot, Bolt.new — AI coding tools are rewriting what it means to be a developer. Here's what you need to know.",
+    category: "Tech",
+    readTime: "10 min read",
+    date: "March 1, 2026",
+    emoji: "👨‍💻",
+    color: "#7c3aed",
+    tags: ["Coding", "Developers", "AI"],
+  },
+  {
+    id: 4,
+    title: "Best ChatGPT Alternatives in 2026",
+    excerpt: "Claude, Gemini, Grok, Perplexity — there are now dozens of powerful ChatGPT alternatives. We tested them all so you don't have to.",
+    category: "Comparison",
+    readTime: "7 min read",
+    date: "Feb 25, 2026",
+    emoji: "⚔️",
+    color: "#e11d48",
+    tags: ["ChatGPT", "Alternatives", "Comparison"],
+  },
+  {
+    id: 5,
+    title: "AI Image Generators: Midjourney vs DALL-E vs Stable Diffusion",
+    excerpt: "The ultimate comparison of the three biggest AI image generators. We tested hundreds of prompts — here's which one wins.",
+    category: "Comparison",
+    readTime: "12 min read",
+    date: "Feb 20, 2026",
+    emoji: "🎨",
+    color: "#f59e0b",
+    tags: ["Image AI", "Midjourney", "Comparison"],
+  },
+  {
+    id: 6,
+    title: "How to Make Money with AI Tools in 2026",
+    excerpt: "Freelancers and entrepreneurs are earning $5K–$50K/month using AI tools. We break down the most lucrative AI-powered business models.",
+    category: "Business",
+    readTime: "9 min read",
+    date: "Feb 15, 2026",
+    emoji: "💰",
+    color: "#10b981",
+    tags: ["Business", "Freelancing", "Income"],
+  },
+];
